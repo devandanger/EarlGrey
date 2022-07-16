@@ -155,7 +155,7 @@ NSString *const kGREYXCTestCaseNotificationKey = @"GREYXCTestCaseNotificationKey
                          inFile:(NSString *)file
                     description:(NSString *)description {
   self.continueAfterFailure = NO;
-  [self recordFailureWithDescription:description inFile:file atLine:line expected:NO];
+//  [self recordFailureWithDescription:description inFile:file atLine:line expected:NO];
   // If the test fails outside of the main thread in a nested runloop it will not be interrupted
   // until it's back in the outer most runloop. Raise an exception to interrupt the test immediately
   [[GREYFrameworkException exceptionWithName:kInternalTestInterruptException
@@ -239,10 +239,10 @@ NSString *const kGREYXCTestCaseNotificationKey = @"GREYXCTestCaseNotificationKey
           break;
         case kGREYXCTestCaseStatusUnknown:
           self.continueAfterFailure = YES;
-          [self recordFailureWithDescription:@"Test has finished with unknown status."
-                                      inFile:@__FILE__
-                                      atLine:__LINE__
-                                    expected:NO];
+//          [self recordFailureWithDescription:@"Test has finished with unknown status."
+//                                      inFile:@__FILE__
+//                                      atLine:__LINE__
+//                                    expected:NO];
           break;
       }
       object_setClass(self.invocation, originalInvocationClass);

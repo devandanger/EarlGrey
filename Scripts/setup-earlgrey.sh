@@ -198,8 +198,8 @@ echo "Changing into EarlGrey Directory"
 pushd "${EARLGREY_SCRIPT_DIR}" >> /dev/null
 
 obtain_fishhook
-obtain_ochamcrest
-obtain_ocmock
+#obtain_ochamcrest
+##obtain_ocmock
 
 echo "The EarlGrey Project and the Test Projects are ready to be run."
 # Return back to the calling folder since the script ran successfully.
