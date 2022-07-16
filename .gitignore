@@ -3,6 +3,7 @@
 .DS_Store
 xcuserdata
 *.gem
+./build/
 fishhook/
 OCHamcrest.framework
 Tests/UnitTests/ocmock/
